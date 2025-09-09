@@ -4,24 +4,28 @@ class DeleteValueAtSpecific
 
 	public static void main(String args[])
 	{
-	int a[]={1,2,3,4,5};
-	int index=2;
-	 
-	int b[]=new int[a.length-1];
+	int a[]={1,22,33,4,5,99};
 		
-	for(int i=0,j=0; i<b.length; i++)
-	{
-		if(!(i==index)||)		
+	int max=0;
+	int smax=0;
 		
-		b[i]=a[i];
+	for(int i=0; i<a.length; i++)
+	
+		if(max<a[i])
+		{
+		smax=max;
+		max=a[i];		
+		}
 		
+		System.out.println("max "+max);
+		System.out.println("smax "+smax);
+			
 		
 				
-	}				
+					
 				
 	
-	System.out.println(Arrays.toString(b));
-	}
+		}
 
 
 
